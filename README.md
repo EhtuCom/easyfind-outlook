@@ -20,6 +20,13 @@ the **EHTU EasyFind** group.
 Updating: run a newer installer over the old one, or click the *Update available* link that EasyFind
 shows in its window when a new release is published here.
 
+**Digital signature.** The installer, the add-in and the uninstaller are signed by *EHTU Informàtica*
+with a timestamp. The certificate is currently self-signed, so Windows SmartScreen may still show
+"Unknown publisher → More info → Run anyway" on first run. Organisations that deploy EasyFind can trust
+the certificate on their PCs (import [`docs/EHTU-CodeSigning.cer`](docs/EHTU-CodeSigning.cer) into
+*Trusted Root Certification Authorities* and *Trusted Publishers*, e.g. through Group Policy); the
+signature then verifies as trusted.
+
 <p align="center"><img src="docs/assets/easyfind-window.png" alt="EasyFind window" width="700"></p>
 <p align="center"><img src="docs/assets/easyfind-ribbon.png" alt="EHTU EasyFind group on the Home tab" width="900"></p>
 
