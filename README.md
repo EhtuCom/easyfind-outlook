@@ -15,7 +15,8 @@ directly, so it works even when Outlook's own search index is incomplete or disa
 
 Run the setup as the user who uses Outlook – no administrator rights are needed. If Outlook is open the
 setup asks to close it and starts it again. The add-in appears on the **Home** tab of the mail view as
-the **EHTU EasyFind** group.
+the **EHTU EasyFind** group; the **EasyFind** button shows the search pane docked at the right of the
+Outlook window (or use *Open in window* for a separate window).
 
 Updating: run a newer installer over the old one, or click the *Update available* link that EasyFind
 shows in its window when a new release is published here.
@@ -27,7 +28,7 @@ the certificate on their PCs (import [`docs/EHTU-CodeSigning.cer`](docs/EHTU-Cod
 *Trusted Root Certification Authorities* and *Trusted Publishers*, e.g. through Group Policy); the
 signature then verifies as trusted.
 
-<p align="center"><img src="docs/assets/easyfind-window.png" alt="EasyFind window" width="700"></p>
+<p align="center"><img src="docs/assets/easyfind-pane.png" alt="EasyFind pane docked in Outlook" width="420"></p>
 <p align="center"><img src="docs/assets/easyfind-ribbon.png" alt="EHTU EasyFind group on the Home tab" width="900"></p>
 
 ## Requirements
@@ -40,6 +41,7 @@ signature then verifies as trusted.
 
 ## Features
 
+- **Pane inside Outlook** (docked at the right, resizable) or a separate window – your choice.
 - Exact substring search (`1234` finds `ABC-1234`), optional *case sensitive* and *whole word*.
 - Look in Subject, From, To, CC, BCC, Body and attachment names, in any combination.
 - Scope: current folder, current folder + subfolders, a whole mailbox or PST, everything, or any
@@ -56,7 +58,7 @@ Documentation: [User guide](docs/USER-GUIDE.md) · [Troubleshooting](docs/TROUBL
 ## Silent installation
 
 ```bat
-EasyFindSetup-1.0.0.exe /VERYSILENT /NORESTART /CLOSEAPPLICATIONS /RESTARTAPPLICATIONS
+EasyFindSetup-1.1.0.exe /VERYSILENT /NORESTART /CLOSEAPPLICATIONS /RESTARTAPPLICATIONS
 ```
 
 Uninstall from *Windows Settings → Apps → EHTU EasyFind for Outlook*.

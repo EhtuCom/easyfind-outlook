@@ -7,14 +7,17 @@ tab, after *Find* / *Add-ins*):
 
 | Button | What it does |
 |---|---|
-| **EasyFind** | Opens the search window. |
-| **Same sender** | Opens the window and immediately searches every message from the sender of the selected message. |
+| **EasyFind** | Shows / hides the **EasyFind pane**, docked at the right of Outlook's main window (like the To-Do bar). Drag its left edge to resize it; the width is remembered. |
+| **Same sender** | Shows the pane and immediately searches every message from the sender of the selected message. |
 | **Same subject** | Same, with the subject of the selected message (RE:/FW:/FWD:/RV:/TR:… prefixes are ignored). |
+| **Open in window** | Opens EasyFind in a separate, larger window instead (also available from the *Open in window* button inside the pane). |
 
-The same buttons are on the ribbon of an opened message (**Message** tab). Keyboard: press `Alt`,
-then the key tips, `EF` opens EasyFind.
+The *Same sender* / *Same subject* / *Open in window* buttons are also on the ribbon of an opened
+message (**Message** tab); they use the pane of the main window. Keyboard: press `Alt`, then the key
+tips, `EF` toggles the pane.
 
-The window stays open next to Outlook; you can keep working in Outlook while a search runs.
+The pane and the window are the same search tool; the pane is convenient for everyday use, the window
+gives more room for the results. Outlook stays usable while a search runs in either.
 
 ## Running a search
 
